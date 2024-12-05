@@ -1,0 +1,71 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>27</x><y>54</y><w>252</w><h>171</h></coordinates><panel_attributes>&lt;&lt;Computadoras&gt;&gt;
+--
+- idComputadora. number
+- nombre: String
+- Monitor: Monitor
+- teclado: Teclado
+- raton: Raton
+- contadorComputadoras: number
+--
+(Agregar los metodos get/set de cada atributo)
+- toString(): String
+--
+Responsibilities
+- Crear objetos de tipo Computadora</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>27</x><y>297</y><w>252</w><h>144</h></coordinates><panel_attributes>&lt;Monitor&gt;
+--
+- idMonitor: number
+- marca: String
+- tamaño: String
+- contadorMonitores: number
+--
+(Agregar los metodos get/set de cada atributo)
+- toString(): String
+--
+Responsibilities
+- Crear objetos de tipo Monitor</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>531</x><y>54</y><w>252</w><h>171</h></coordinates><panel_attributes>&lt;Orden&gt;
+--
+- idOrden: number
+- computadoras: Computadora
+- contadorOrdenes: number
+--
+- AgregarComputadora(computadora)
+- mostrarOrden()
+- toString(): String
+(Agregar los metodos get/set de cada atributo)
+--
+Responsibilities
+- Crear objetos de tipo Orden y almacena un 
+arreglo de objetos de tipo Computadora</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>279</y><w>252</w><h>108</h></coordinates><panel_attributes>&lt;DispositivosEntrada&gt;
+--
+- tipoEntrada: String
+- marca: String
+--
+- (Agregar los metodos get/set de cada atributo)
+--
+Responsibilities
+- Crear objetos de tipo DispositivoEntrada</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>495</x><y>441</y><w>153</w><h>108</h></coordinates><panel_attributes>&lt;Raton&gt;
+--
+- idRaton: number
+- contadorRatones: number
+--
+- toString(): String
+--
+Responsibilities
+- Crear objetos de tipo Raton</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>702</x><y>441</y><w>153</w><h>108</h></coordinates><panel_attributes>&lt;Teclado&gt;
+--
+- idTeclado: number
+- contadorTeclados: number
+--
+- toString(): String
+--
+Responsibilities
+- Crear objetos de tipo Teclado</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>117</y><w>279</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;.
+&lt;&lt;Agregar&gt;&gt;</panel_attributes><additional_attributes>290;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>135</x><y>216</y><w>81</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;.
+&lt;&lt;Agregar&gt;&gt;</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>135</x><y>243</y><w>666</w><h>360</h></coordinates><panel_attributes>lt=.
+&lt;&lt;Agregar&gt;&gt;</panel_attributes><additional_attributes>720;380;330;380;330;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>567</x><y>540</y><w>27</w><h>63</h></coordinates><panel_attributes>lt=.
+</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>774</x><y>540</y><w>27</w><h>63</h></coordinates><panel_attributes>lt=.
+</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>666</x><y>378</y><w>27</w><h>54</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>774</x><y>405</y><w>27</w><h>54</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>558</x><y>405</y><w>27</w><h>54</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>558</x><y>396</y><w>243</w><h>36</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>250;20;10;20</additional_attributes></element></diagram>
